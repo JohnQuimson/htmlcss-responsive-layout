@@ -18,6 +18,65 @@ Common
 
 /* 
 ----------------------
+Debug
+----------------------
+*/
+/* Header */
+.debug header {
+  background-color: #0084fd;
+}
+
+.debug nav {
+  width: 70%;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.debug nav .logo,
+.debug .navigation,
+.debug .hamburger {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.debug .hamburger {
+  display: none;
+}
+
+.debug .navigation {
+  width: 300px;
+}
+/* Main */
+.debug .container {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.debug .box {
+  background-color: #b5ddff;
+  width: calc((100% - 40px) / 3);
+  aspect-ratio: 1 / 1;
+  height: 200px;
+  flex-grow: 1;
+}
+
+.debug .big {
+  /* width: calc((100% - 40px) / 2); */
+  flex-grow: 2;
+}
+
+/* 
+----------------------
 Header
 ----------------------
 */
@@ -39,3 +98,13 @@ Footer
 Media Query
 ----------------------
 */
+
+@media screen and (max-width: 768px) {
+  .debug .navigation {
+    display: none;
+  }
+
+  .debug .hamburger {
+    display: block;
+  }
+}
