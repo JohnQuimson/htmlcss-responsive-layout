@@ -135,6 +135,27 @@ Debug
   width: 500px;
   background-color: #bcb5ee;
 }
+
+.debug .benefits {
+  background-color: #9792e4;
+}
+
+.debug .container-benefits {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.debug .box-benef {
+  background-color: white;
+  width: calc((100% - 40px) / 3);
+  height: 250px;
+}
+
 /* 
 ----------------------
 Header
