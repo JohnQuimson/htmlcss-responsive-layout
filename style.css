@@ -178,6 +178,20 @@ Debug
   align-self: flex-start;
 }
 
+.debug .iscriviti {
+  background-color: #9792e4;
+  margin-top: 5vh;
+  height: 300px;
+  text-align: center;
+}
+
+.debug footer {
+  background-color: #333333;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+
 /* 
 ----------------------
 Header
@@ -201,7 +215,7 @@ Footer
 Media Query
 ----------------------
 */
-
+/* Da 0px a 768px */
 @media screen and (max-width: 768px) {
   .debug .navigation {
     display: none;
@@ -209,5 +223,9 @@ Media Query
 
   .debug .hamburger {
     display: block;
+  }
+
+  .debug .container-plan {
+    flex-wrap: wrap;
   }
 }
