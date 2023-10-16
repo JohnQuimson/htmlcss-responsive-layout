@@ -117,18 +117,17 @@ Debug
 
 .debug .profilo {
   background-color: #9792e4;
-  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 20px 10px;
+  gap: 20px;
 }
 
 .debug .testim-foto {
   height: 80px;
   width: 80px;
   background-color: #bcb5ee;
-  border-radius: 50%;
 }
 
 .debug .testim-info {
@@ -254,5 +253,47 @@ Media Query
 
   .debug .box-benef {
     width: calc((100% - 20px) / 2);
+  }
+
+  .debug .container-about {
+    width: 90%;
+  }
+}
+
+/* Da 0px a 480px */
+@media screen and (max-width: 480px) {
+  .debug .box-big,
+  .debug .box {
+    width: 100%;
+  }
+
+  .debug .profilo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .debug .testim-foto {
+    width: 200px;
+    height: 200px;
+  }
+
+  .debug .testim-info {
+    width: 100%;
+    height: 200px;
+  }
+
+  .debug .box-benef {
+    width: 100%;
+  }
+
+  .debug .container-about {
+    flex-wrap: wrap;
+  }
+
+  .debug .about-info,
+  .about .about-foto {
+    width: 100%;
   }
 }
