@@ -52,10 +52,9 @@ Debug
   width: 300px;
 }
 /* Main */
-.debug .container {
+.debug .container-griglia {
   width: 70%;
   margin: 0 auto;
-  border: 1px solid black;
   margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
@@ -65,14 +64,51 @@ Debug
 .debug .box {
   background-color: #b5ddff;
   width: calc((100% - 40px) / 3);
-  aspect-ratio: 1 / 1;
   height: 200px;
-  flex-grow: 1;
 }
 
-.debug .big {
-  /* width: calc((100% - 40px) / 2); */
-  flex-grow: 2;
+.debug .box-big {
+  width: calc((100% - 10px) / 3 * 2);
+  height: 200px;
+  background-color: #b5ddff;
+}
+
+.debug .planning {
+  background-color: #9792e4;
+  height: 400px;
+}
+
+.container-plan {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.debug .plan-info {
+  background-color: #bcb5ee;
+  height: 200px;
+  width: calc((100% - 40px) / 2);
+}
+
+.debug .plan-foto {
+  background-color: #bcb5ee;
+  height: 150px;
+  width: calc((100% - 40px) / 2);
+  align-self: flex-end;
+}
+
+.container-testimonials {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 50px;
 }
 
 /* 
