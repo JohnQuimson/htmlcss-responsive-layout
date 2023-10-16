@@ -156,6 +156,28 @@ Debug
   height: 250px;
 }
 
+.debug .container-about {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  display: flex;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.debug .about-info {
+  background-color: #bcb5ee;
+  height: 200px;
+  width: calc((100% - 40px) / 2);
+}
+
+.debug .about-foto {
+  background-color: #bcb5ee;
+  height: 150px;
+  width: calc((100% - 40px) / 2);
+  align-self: flex-start;
+}
+
 /* 
 ----------------------
 Header
