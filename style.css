@@ -75,7 +75,6 @@ Debug
 
 .debug .planning {
   background-color: #9792e4;
-  height: 400px;
 }
 
 .container-plan {
@@ -84,7 +83,7 @@ Debug
   margin-top: 5vh;
   display: flex;
   gap: 40px;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 .debug .plan-info {
@@ -120,14 +119,16 @@ Debug
   background-color: #9792e4;
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
 }
 
 .debug .testim-foto {
   height: 80px;
   width: 80px;
   background-color: #bcb5ee;
+  border-radius: 50%;
 }
 
 .debug .testim-info {
@@ -159,7 +160,7 @@ Debug
 .debug .container-about {
   width: 70%;
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 3vh;
   display: flex;
   gap: 40px;
   padding-top: 50px;
@@ -180,7 +181,7 @@ Debug
 
 .debug .iscriviti {
   background-color: #9792e4;
-  margin-top: 5vh;
+  margin-top: 6vh;
   height: 300px;
   text-align: center;
 }
@@ -217,6 +218,10 @@ Media Query
 */
 /* Da 0px a 768px */
 @media screen and (max-width: 768px) {
+  .debug nav {
+    width: 90%;
+  }
+
   .debug .navigation {
     display: none;
   }
@@ -225,7 +230,29 @@ Media Query
     display: block;
   }
 
+  .debug .container-griglia {
+    width: 90%;
+  }
+
   .debug .container-plan {
     flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .debug .plan-info,
+  .debug .plan-foto {
+    width: 100%;
+  }
+
+  .debug .container-testimonials {
+    width: 90%;
+  }
+
+  .debug .container-benefits {
+    width: 90%;
+  }
+
+  .debug .box-benef {
+    width: calc((100% - 20px) / 2);
   }
 }
