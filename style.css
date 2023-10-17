@@ -108,8 +108,35 @@ nav {
   align-items: center;
 }
 
+nav img {
+  height: 2.5rem;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 1.5625rem;
+  align-items: center;
+}
+
+.navigation ul li {
+  color: white;
+  list-style-type: none;
+}
+
+.navigation ul li:last-child {
+  background-color: white;
+  color: black;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 1.25rem;
+}
+
 .hamburger {
   display: none;
+  color: white;
+}
+
+.hamburger i {
+  font-size: 1.5625rem;
 }
 
 /* 
