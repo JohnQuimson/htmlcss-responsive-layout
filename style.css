@@ -492,16 +492,16 @@ Main
 
 .about-foto #quote {
   color: #9792e4;
-  font-size: 70px;
+  font-size: 5vw;
   position: absolute;
   top: 0;
-  left: 150px;
+  left: 10vw;
 }
 
 .about-foto h4 {
   color: #9792e4;
   font-size: 20px;
-  width: 50%;
+  width: 80%;
   margin-top: 20px;
 }
 
@@ -517,6 +517,7 @@ Main
   font-size: 12px;
 }
 
+/* Iscriviti */
 .iscriviti {
   background-color: #9792e4;
   margin-top: 6vh;
@@ -540,10 +541,6 @@ footer {
 Media Query
 ----------------------
 */
-
-.container-griglia {
-  max-width: 1140px;
-}
 /* Da 0px a 768px */
 @media screen and (max-width: 768px) {
   /* Navbar */
@@ -564,20 +561,73 @@ Media Query
     width: 90%;
   }
 
-  .container-plan {
-    flex-wrap: wrap;
-    width: 90%;
+  .box-big {
+    display: flex;
+    flex-direction: column;
   }
 
-  .plan-info,
-  .plan-foto {
+  .content-griglia {
     width: 100%;
   }
 
-  .container-testimonials {
-    width: 90%;
+  .foto-griglia {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 
+  /* Planning */
+  .container-plan {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .plan-sx,
+  .plan-dx {
+    width: 100%;
+  }
+
+  .plan-sx h3 {
+    font-size: 56px;
+  }
+
+  .plan-dx h3 {
+    font-size: 24px;
+  }
+
+  /* Testimonials */
+  .container-testimonials {
+    width: 95%;
+  }
+
+  .profilo {
+    padding: 25px 10px;
+  }
+
+  .testim-foto {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .testim-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .testim-info {
+    width: 70%;
+    margin-right: 30px;
+  }
+
+  .testim-info p {
+    line-height: 30px;
+  }
+
+  /* Benefits */
   .container-benefits {
     width: 90%;
   }
@@ -586,6 +636,54 @@ Media Query
     width: calc((100% - 20px) / 2);
   }
 
+  /* About Us */
+  .container-about {
+    width: 60%;
+    margin: 5vh auto;
+    display: flex;
+    gap: 50px;
+  }
+
+  .about-info {
+    width: calc(((100% - 50px) / 3) * 2);
+  }
+
+  .about h3 {
+    font-size: 48px;
+    color: #9792e4;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .about-info p {
+    line-height: 30px;
+  }
+
+  .about-info p:not(:last-child) {
+    margin-bottom: 50px;
+    font-weight: 200;
+  }
+
+  .about-img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .about-foto #quote {
+    font-size: 8vw;
+    left: 16vw;
+  }
+
+  .about-foto h4 {
+    width: 80%;
+  }
+
+  .about-foto button {
+    padding: 8px 15px;
+  }
+
+  /* -------------------------------- */
+
   .container-about {
     width: 90%;
   }
@@ -593,9 +691,46 @@ Media Query
 
 /* Da 0px a 480px */
 @media screen and (max-width: 576px) {
+  /* Navbar */
+  nav {
+    width: 90%;
+  }
+
+  /* Marketing */
+
+  .box-big {
+    width: 100%;
+  }
+
+  .content-griglia {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-griglia {
+  }
+
+  .foto-griglia img {
+    width: 80%;
+    display: block;
+    align-self: flex-end;
+  }
+
+  .content-griglia button {
+  }
+
+  /* ------------------------- */
+
   .box-big,
   .box {
     width: 100%;
+  }
+
+  .foto-griglia {
+    justify-content: center;
   }
 
   .profilo {
