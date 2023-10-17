@@ -33,8 +33,8 @@ button a {
 Debug
 ----------------------
 */
-/* Header */
 
+/* Header */
 .debug nav {
   height: 80px;
 }
@@ -53,7 +53,6 @@ Debug
 } */
 
 /* Main */
-
 .debug .box {
   height: 200px;
 }
@@ -522,6 +521,54 @@ Main
   background-color: #9792e4;
   margin-top: 6vh;
   text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.iscriviti span {
+  color: #cbc9f1;
+  margin-bottom: 20px;
+}
+
+.iscriviti h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.iscriviti h2 {
+  color: #fdc15f;
+  font-size: 84px;
+  margin-bottom: 20px;
+}
+
+.iscriviti p {
+  width: 30%;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.iscriviti button {
+  background-color: white;
+  padding: 20px 80px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.iscriviti button a {
+  color: #9792e4;
+  font-size: 18px;
+}
+
+.iscriviti #copyright {
+  font-size: 14px;
+  color: white;
+}
+
+.iscriviti #copyright a {
+  color: white;
 }
 
 /* 
