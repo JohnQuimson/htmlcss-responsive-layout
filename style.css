@@ -329,9 +329,14 @@ Main
 }
 
 .intro {
-  background-color: #bcb5ee;
   width: 100%;
   text-align: center;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #9792e4;
+  padding: 20px 0;
 }
 
 .profilo {
@@ -344,12 +349,19 @@ Main
 }
 
 .testim-foto {
-  width: 80px;
-  background-color: #bcb5ee;
+  width: 20%;
+  height: ;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.testim-foto img {
+  width: 100%;
 }
 
 .testim-info {
-  width: 100%;
+  width: 80%;
   background-color: #bcb5ee;
 }
 
