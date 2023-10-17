@@ -22,37 +22,103 @@ Debug
 ----------------------
 */
 /* Header */
-.debug header {
-  background-color: #0084fd;
-}
 
 .debug nav {
-  width: 70%;
-  margin: 0 auto;
   height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.debug nav .logo,
+/* .debug nav .logo,
 .debug .navigation,
 .debug .hamburger {
   background-color: white;
   height: 50px;
   width: 50px;
   border: 1px solid black;
+} */
+
+/* .debug .navigation {
+  width: 300px;
+} */
+
+/* Main */
+
+.debug .box {
+  height: 200px;
 }
 
-.debug .hamburger {
+.debug .box-big {
+  height: 200px;
+}
+
+.debug .plan-info {
+  height: 200px;
+}
+
+.debug .plan-foto {
+  height: 150px;
+}
+
+.debug .intro {
+  height: 80px;
+}
+
+.debug .testim-foto {
+  height: 80px;
+}
+
+.debug .testim-info {
+  height: 80px;
+}
+
+.debug .box-benef {
+  height: 250px;
+}
+
+.debug .about-info {
+  height: 200px;
+}
+
+.debug .about-foto {
+  height: 150px;
+}
+
+.debug .iscriviti {
+  height: 300px;
+}
+
+.debug footer {
+  height: 300px;
+}
+
+/* 
+----------------------
+Header
+----------------------
+*/
+
+header {
+  background-color: #0084fd;
+}
+
+nav {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
   display: none;
 }
 
-.debug .navigation {
-  width: 300px;
-}
-/* Main */
-.debug .container-griglia {
+/* 
+----------------------
+Main
+----------------------
+*/
+
+.container-griglia {
   width: 70%;
   margin: 0 auto;
   margin-top: 5vh;
@@ -61,19 +127,17 @@ Debug
   gap: 20px;
 }
 
-.debug .box {
+.box {
   background-color: #b5ddff;
   width: calc((100% - 40px) / 3);
-  height: 200px;
 }
 
-.debug .box-big {
+.box-big {
   width: calc((100% - 10px) / 3 * 2);
-  height: 200px;
   background-color: #b5ddff;
 }
 
-.debug .planning {
+.planning {
   background-color: #9792e4;
 }
 
@@ -83,23 +147,21 @@ Debug
   margin-top: 5vh;
   display: flex;
   gap: 40px;
-  padding: 50px 0;
+  padding: 3.125rem 3.125rem;
 }
 
-.debug .plan-info {
+.plan-info {
   background-color: #bcb5ee;
-  height: 200px;
   width: calc((100% - 40px) / 2);
 }
 
-.debug .plan-foto {
+.plan-foto {
   background-color: #bcb5ee;
-  height: 150px;
   width: calc((100% - 40px) / 2);
   align-self: flex-end;
 }
 
-.debug .container-testimonials {
+.container-testimonials {
   width: 70%;
   margin: 0 auto;
   margin-top: 5vh;
@@ -108,14 +170,13 @@ Debug
   gap: 20px;
 }
 
-.debug .intro {
+.intro {
   background-color: #bcb5ee;
-  height: 80px;
   width: 100%;
   text-align: center;
 }
 
-.debug .profilo {
+.profilo {
   background-color: #9792e4;
   display: flex;
   justify-content: space-between;
@@ -124,23 +185,21 @@ Debug
   gap: 20px;
 }
 
-.debug .testim-foto {
-  height: 80px;
+.testim-foto {
   width: 80px;
   background-color: #bcb5ee;
 }
 
-.debug .testim-info {
-  height: 80px;
+.testim-info {
   width: 100%;
   background-color: #bcb5ee;
 }
 
-.debug .benefits {
+.benefits {
   background-color: #9792e4;
 }
 
-.debug .container-benefits {
+.container-benefits {
   width: 70%;
   margin: 0 auto;
   margin-top: 5vh;
@@ -150,13 +209,12 @@ Debug
   padding: 50px 0;
 }
 
-.debug .box-benef {
+.box-benef {
   background-color: white;
   width: calc((100% - 40px) / 3);
-  height: 250px;
 }
 
-.debug .container-about {
+.container-about {
   width: 70%;
   margin: 0 auto;
   margin-top: 3vh;
@@ -165,44 +223,22 @@ Debug
   padding-top: 50px;
 }
 
-.debug .about-info {
+.about-info {
   background-color: #bcb5ee;
-  height: 200px;
   width: calc((100% - 40px) / 2);
 }
 
-.debug .about-foto {
+.about-foto {
   background-color: #bcb5ee;
-  height: 150px;
   width: calc((100% - 40px) / 2);
   align-self: flex-start;
 }
 
-.debug .iscriviti {
+.iscriviti {
   background-color: #9792e4;
   margin-top: 6vh;
-  height: 300px;
   text-align: center;
 }
-
-.debug footer {
-  background-color: #333333;
-  height: 300px;
-  text-align: center;
-  color: white;
-}
-
-/* 
-----------------------
-Header
-----------------------
-*/
-
-/* 
-----------------------
-Main
-----------------------
-*/
 
 /* 
 ----------------------
@@ -210,11 +246,21 @@ Footer
 ----------------------
 */
 
+footer {
+  background-color: #333333;
+  text-align: center;
+  color: white;
+}
+
 /* 
 ----------------------
 Media Query
 ----------------------
 */
+
+.container-griglia {
+  max-width: 1140px;
+}
 /* Da 0px a 768px */
 @media screen and (max-width: 768px) {
   .debug nav {
@@ -261,7 +307,7 @@ Media Query
 }
 
 /* Da 0px a 480px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .debug .box-big,
   .debug .box {
     width: 100%;
