@@ -600,6 +600,50 @@ Hovers
 ----------------------
 */
 
+/* nvabar list */
+.navigation ul li:not(:last-child):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navigation ul li:last-child:hover {
+  background-color: #eeeeee;
+  color: #0084fd;
+  cursor: pointer;
+}
+
+.content-griglia button:hover {
+  background-color: #5db0ff;
+}
+
+.plan-dx button:hover i {
+  color: white;
+}
+
+.plan-dx button:hover {
+  cursor: pointer;
+  background-color: #b2aef0;
+}
+
+.box-benef button:hover a {
+  color: #9792e4;
+}
+
+.box-benef button:hover {
+  background-color: white;
+  border: 2px solid #9792e4;
+  cursor: pointer;
+}
+
+.iscriviti button:hover {
+  background-color: #b8b4f0;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.iscriviti button:hover a {
+  color: white;
+}
 /* 
 ----------------------
 Media Query
