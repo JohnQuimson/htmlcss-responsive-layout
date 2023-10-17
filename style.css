@@ -581,7 +581,24 @@ footer {
   background-color: #333333;
   text-align: center;
   color: white;
+  padding: 50px 0;
 }
+
+footer p {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 30%;
+}
+
+footer span a {
+  color: #9792e4;
+}
+
+/* 
+----------------------
+Hovers
+----------------------
+*/
 
 /* 
 ----------------------
@@ -732,6 +749,16 @@ Media Query
   .container-about {
     width: 90%;
   }
+
+  /* Free */
+  .iscriviti p {
+    width: 60%;
+  }
+
+  /* Footer */
+  footer p {
+    width: 70%;
+  }
 }
 
 /* Da 0px a 480px */
@@ -838,5 +865,15 @@ Media Query
   .about-info,
   .about .about-foto {
     width: 100%;
+  }
+
+  /* Free */
+  .iscriviti p {
+    width: 80%;
+  }
+
+  /* Footer */
+  footer p {
+    width: 80%;
   }
 }
