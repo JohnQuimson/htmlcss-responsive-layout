@@ -365,7 +365,18 @@ Main
 
 .testim-info {
   width: 80%;
-  background-color: #bcb5ee;
+  color: white;
+}
+
+.testim-info h5 {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.testim-info i:first-child {
+  position: relative;
+  bottom: 5px;
 }
 
 .benefits {
