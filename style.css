@@ -54,11 +54,11 @@ Debug
   height: 200px;
 }
 
-.debug .plan-info {
+.debug .plan-sx {
   height: 200px;
 }
 
-.debug .plan-foto {
+.debug .plan-dx {
   height: 150px;
 }
 
@@ -244,6 +244,7 @@ Main
   line-height: 30px;
 }
 
+/* Planning */
 .planning {
   background-color: #9792e4;
 }
@@ -253,21 +254,71 @@ Main
   margin: 0 auto;
   margin-top: 5vh;
   display: flex;
-  gap: 40px;
-  padding: 3.125rem 3.125rem;
+  gap: 20px;
+  padding: 50px;
 }
 
-.plan-info {
-  background-color: #bcb5ee;
+.plan-sx {
   width: calc((100% - 40px) / 2);
+  color: white;
 }
 
-.plan-foto {
-  background-color: #bcb5ee;
+.plan-sx img {
+  width: 100%;
+
+  margin-top: 50px;
+}
+
+.plan-sx h3 {
+  font-size: 34px;
+  padding: 100px 0 50px;
+}
+
+.plan-sx p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.plan-dx {
   width: calc((100% - 40px) / 2);
   align-self: flex-end;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
 }
 
+.plan-dx img {
+  width: 60%;
+}
+
+.plan-dx h3 {
+  font-size: 24px;
+  padding: 10px 0 20px;
+}
+
+.plan-dx p {
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.plan-dx button {
+  color: black;
+  background-color: #9792e4;
+  border-radius: 50%;
+  border: none;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.plan-dx button a {
+  color: black;
+  border-radius: 50%;
+}
+
+/* Testimonials */
 .container-testimonials {
   width: 70%;
   margin: 0 auto;
