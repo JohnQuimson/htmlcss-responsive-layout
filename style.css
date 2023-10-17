@@ -16,6 +16,10 @@ Common
 ----------------------
 */
 
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
 /* 
 ----------------------
 Debug
@@ -162,6 +166,53 @@ Main
 .box-big {
   width: calc((100% - 10px) / 3 * 2);
   background-color: #b5ddff;
+  display: flex;
+  padding: 30px 30px 0 30px;
+  border-radius: 20px;
+}
+
+.content-griglia {
+  width: 50%;
+}
+
+.foto-griglia {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-griglia img {
+  width: 80%;
+  display: block;
+  align-self: flex-end;
+}
+
+.content-griglia h3 {
+  color: #0084fd;
+  font-size: 24px;
+}
+
+.content-griglia p {
+  color: #5a6e7f;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 30px 0;
+  line-height: 30px;
+}
+
+.content-griglia button {
+  background-color: #0084fd;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.content-griglia button a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .planning {
