@@ -682,8 +682,6 @@ Media Query
     padding: 8px 15px;
   }
 
-  /* -------------------------------- */
-
   .container-about {
     width: 90%;
   }
@@ -705,39 +703,46 @@ Media Query
   .content-griglia {
     width: 100%;
     display: flex;
-
     flex-direction: column;
     align-items: center;
-  }
-
-  .foto-griglia {
-  }
-
-  .foto-griglia img {
-    width: 80%;
-    display: block;
-    align-self: flex-end;
-  }
-
-  .content-griglia button {
-  }
-
-  /* ------------------------- */
-
-  .box-big,
-  .box {
-    width: 100%;
   }
 
   .foto-griglia {
     justify-content: center;
   }
 
+  .box {
+    width: 100%;
+  }
+
+  /* Planning */
+  .plan-sx h3 {
+    font-size: 40px;
+  }
+
+  .plan-sx p {
+    font-size: 20px;
+  }
+
+  .planning p {
+    font-size: 20px;
+  }
+
+  /* Testimonials */
+  .intro p {
+    line-height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
   .profilo {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .testim-foto {
@@ -746,16 +751,41 @@ Media Query
   }
 
   .testim-info {
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  /* Benefits */
   .box-benef {
     width: 100%;
   }
 
+  .box-benef p {
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  /* About Us */
   .container-about {
     flex-wrap: wrap;
+  }
+
+  .about-img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .about-foto #quote {
+    font-size: 12vw;
+    left: 30vw;
+  }
+
+  .about-foto h4 {
+    width: 90%;
+    font-size: 26px;
   }
 
   .about-info,
