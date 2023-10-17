@@ -20,6 +20,14 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+button {
+  border: none;
+}
+
+button a {
+  text-decoration: none;
+}
+
 /* 
 ----------------------
 Debug
@@ -199,7 +207,6 @@ Main
 
 .content-griglia button {
   background-color: #0084fd;
-  border: none;
   padding: 8px 30px;
   border-radius: 20px;
   margin-bottom: 40px;
@@ -207,7 +214,6 @@ Main
 
 .content-griglia button a {
   color: white;
-  text-decoration: none;
   font-size: 18px;
   letter-spacing: 2px;
 }
@@ -308,7 +314,6 @@ Main
   color: black;
   background-color: #9792e4;
   border-radius: 50%;
-  border: none;
   height: 50px;
   width: 50px;
   margin-top: 30px;
@@ -404,8 +409,41 @@ Main
 .box-benef {
   background-color: white;
   width: calc((100% - 40px) / 3);
+  padding: 30px;
+  border-radius: 20px;
 }
 
+.box-benef span {
+  font-size: 72px;
+  color: #9792e4;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.box-benef h3 {
+  font-size: 22px;
+  color: #9792e4;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.box-benef p {
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+.box-benef button {
+  background-color: #9792e4;
+  padding: 8px 40px;
+  border-radius: 20px;
+}
+
+.box-benef button a {
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* About us */
 .container-about {
   width: 70%;
   margin: 0 auto;
